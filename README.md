@@ -37,6 +37,24 @@ python stack/Stack.py
     ```
 
 3. Go to http://0.0.0.0:8000
+
+### Notes
+- Framework: FastAPI
+- Implemented format: json
+- Implemented storage: local storage
+- Mocked format: xml
+- Mocked storage: S3
+
+I used strategy design pattern to manage data-formats(json,xml, etc.) and data-storages(localStorage, S3, etc.)
+
+The main entity of this task is the DataModel. Each DataModel has it's own format(DataFormat abstract class) and destination(Storage abstract class).
+
+- DataModel:
+
+- DataFormat:
+
+- Storage:
+
 ### Generate test coverage report
 
 ```

@@ -180,36 +180,3 @@ class DataModel():
         
     def __repr__(self) -> str:
         return str(self.data)
-
-
-if __name__ == "__main__": # pragma: no cover
-
-    model = DataModel()
-    model.format = JsonDataFormat()
-    model.storage = LocalStorage({"file": "./data3.json"})
-    
-    # data = model.data
-    print(model)
-    data = []
-    data.append({"value": 0, "currency": "USD"})
-    data.append({"value": 11, "currency": "USD"})
-    model.insert(data[0])
-    print(model)
-    # model.write(data)
-    # t1 = threading.Thread(target=model.data, args=(data,))
-
-    filtered = model.query({"value": 11})
-    print(filtered)
-    model.delete({"value": 1})
-    # t1.start()
-    print(model)
-    # print(model.delete({"value": 11, "currency": "USD"}))
-    # t2 = threading.Thread(target=model.data, args=(data,))
-    # t2.start()
-    # t1.join()
-    # t2.join()
-    # print(filtered)
-    
-
-    # Storage.insert({'name': 'John', 'age': '22'})
-    # Storage.batchInsert([{'name': 'John', 'age': '22'}, {'name': 'John', 'age': '22'}])
