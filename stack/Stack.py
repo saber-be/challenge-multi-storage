@@ -66,7 +66,7 @@ class Stack:
 # Driver Code
 if __name__ == "__main__": # pragma: no cover
 	stack = Stack()
-	stack.push(None)
+	
 	for i in range(1, 11):
 		stack.push(i)
 	print(f"Stack: {stack}")
@@ -75,3 +75,8 @@ if __name__ == "__main__": # pragma: no cover
 		remove = stack.pop()
 		print(f"Pop: {remove}")
 	print(f"Stack: {stack}")
+
+	try:
+		stack.push(None)
+	except NoneElementException as e:
+		print(e)

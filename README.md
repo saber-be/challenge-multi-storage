@@ -1,5 +1,12 @@
 # Y42 Coding Challenge
 ## 1. Testing a Struct interface
+Source code: `./stack/Stack.py`
+
+Run client code: 
+
+```
+python stack/Stack.py
+```
 
 ## 2. Data Store Library
 ### Install on local
