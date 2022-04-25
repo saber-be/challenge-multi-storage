@@ -1,0 +1,8 @@
+.vscode
+cli/configs.py
+__pycache__
+*_cache
+data.json
+data.xml
+.coverage
+coverage.xml
